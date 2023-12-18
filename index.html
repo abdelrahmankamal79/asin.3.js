@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <!-- ///////////////////fonts//////////////// -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100&family=Amatic+SC&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <section>
+    <div class="container">
+        <div class="d-flex justify-content-center py-5">
+            <h1>Bookmarker</h1>
+        </div>
+        <div class="">
+            <h2 class="text-center "><i class="fa-solid fa-bookmark small"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i></h2>
+            <label for="siteNameInput" class="fs-3 fw-bold "><i class="fa-solid fa-book-bookmark pe-2 small"></i>Site Name : </label>
+            <input oninput="validName(this.value)" type="text" id="siteNameInput" placeholder="Bookmark Name" class="form-control mb-5">
+            <label for="siteUrlInput" class="fs-3 fw-bold "><i class="fa-solid fa-link pe-2 small"></i>Site URL : </label>
+            <input oninput="validURL(this.value)" type="text" id="siteUrlInput" placeholder="  website URL " class="form-control mb-5">
+        </div>
+        <div class="text-center mb-5"><button onclick="addSite()" class="btn btn-danger px-5 mx-auto ">submit</button></div>
+        <div>
+            <table class="table text-center">
+                <thead>
+                    <th>Index</th>
+                    <th>Website Name</th>
+                    <th>visit</th>
+                    <th>Delete</th>
+                </thead>
+                <tbody id="tBody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+  </section>
+
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
